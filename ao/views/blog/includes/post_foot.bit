@@ -24,13 +24,13 @@ echo '<footer class="post">';
 	{
 		echo ' · ';
 
-		if( !empty($theme['disqus_account']) )
+		if( !empty($theme['disqus_account']) && empty($theme['facebook_appId']) )
 		{
 			// Disqus comments
             // Added the 'Comments' text in case the browser does not load the script correctly
 			echo '<span><a href="'.$post['permalink'].'#disqus_thread">'.$_LANG['COMMENTS'].'</a></span>';
 		}
-		elseif( !empty($theme['facebook_appId']) )
+		elseif( !empty($theme['facebook_appId']) && empty($theme['disqus_account']) )
 		{
 			// Facebook comments
 			echo '<span><a href="'.$post['permalink'].'#comment_form">'.$_LANG['COMMENTS'].' (<fb:comments-count href="'.BLOG_URL.$post['permalink'].'"></fb:comments-count>)</a></span>';
