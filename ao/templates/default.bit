@@ -44,21 +44,11 @@
 	<!-- Rainbow - Syntax highlighting library -->
 	<script src="<?php echo HTML_THEME_JS.'rainbow-custom.min.js' ?>"></script>
 
+    <!-- Browser Update Notice -->
+    <script src="<?php echo HTML_THEME_JS.'browser-update.js' ?>"></script>
+
 	<!-- ATOM Feed 2.0 -->
 	<link rel="alternate" type="application/atom+xml" title="ATOM Feed" href="<?php echo $layout['feed'] ?>" />
-
-    <!-- Browser Update Notice -->
-    <script type="text/javascript"> 
-        var $buoop = {} 
-        $buoop.ol = window.onload; 
-        window.onload=function(){ 
-         try {if ($buoop.ol) $buoop.ol();}catch (e) {} 
-         var e = document.createElement("script"); 
-         e.setAttribute("type", "text/javascript"); 
-         e.setAttribute("src", "http://browser-update.org/update.js"); 
-         document.body.appendChild(e); 
-        }
-    </script>
 
 	<!-- Plugin -->
 	<?php
@@ -99,8 +89,8 @@
 
         <!-- NAVIGATION -->
         <nav id="navbar">
-            <div class="navbutton"><a href="<?php echo HTML_PATH_ROOT ?>"><?php echo $_LANG['HOME'] ?></a></div>
             <!-- <div class="navbutton"><a href="Destination">Link text</a></div> -->
+            <div class="navbutton"><a href="<?php echo HTML_PATH_ROOT ?>"><?php echo $_LANG['HOME'] ?></a></div>
         </nav>
 
 		<!-- MAIN -->
