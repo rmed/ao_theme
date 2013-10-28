@@ -5,7 +5,7 @@ Ao is a simple, clear, blue-ish theme for Nibbleblog based on Simpler.
 
 *NOTE*: This theme has certain incompatibilities with IE versions prior to 9
 
-Status: **Work in progress**
+Status: **v0.1**
 
 Works with Nibbleblog **3.6**
 
