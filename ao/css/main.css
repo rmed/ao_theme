@@ -92,8 +92,10 @@ a:hover {
 }
 
 #sidebar {
+    box-shadow: -5px 0px 5px -5px #999999;
 	float: right;
-	width: 230px;
+    max-width: 30%;
+	width: 200px;
 	margin-right: 10px;
 }
 

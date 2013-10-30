@@ -1,7 +1,9 @@
 /* --- Plugins --- */
 div.plugin_box {
     margin-bottom: 20px;
-    overflow: auto;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 div.plugin_box ul {
@@ -17,8 +19,7 @@ div.plugin_box	li {
 }
 
 div.plugin_box	h3.title {
-	border-bottom: 1px solid #F1F1F1;
-	border-top: 1px solid #F1F1F1;
+	border-bottom: 1px solid #AAAAAA;
 	color: #333333;
 	font-weight: normal;
 	padding: 4px 0;
