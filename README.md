@@ -7,12 +7,12 @@ Ao is a simple, clear, blue-ish theme for Nibbleblog based on Simpler.
 
 Status: **v0.2** (in development)
 
-Works with Nibbleblog **3.7**
+Works with Nibbleblog **3.7.1**
 
 ## Features
 
 - Syntax highlighting
-- Configurable navigation bar
+- Configurable navigation bar (through theme's `config.bit`)
 - Simple social sharing for posts
 - [Old browser detection](http://browser-update.org/)
 - Content license placeholder at the footer (text specified through theme's `config.bit`)

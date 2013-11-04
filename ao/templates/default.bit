@@ -51,11 +51,7 @@
 
 	<div id="container">
 
-        <!-- NAVIGATION -->
-        <nav id="navbar">
-            <!-- <div class="navbutton"><a href="Destination">Link text</a></div> -->
-            <div class="navbutton"><a href="<?php Theme::url() ?>"><?php echo $Language->get('HOME') ?></a></div>
-        </nav>
+        <?php include ('includes/navbar.bit'); ?>
 
 		<!-- MAIN -->
 		<section id="main">
