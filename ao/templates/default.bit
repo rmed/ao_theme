@@ -88,7 +88,7 @@
                 <?php echo $theme['content_license'] ?>
             </div>
             <div class="atom">
-				<a href="<?php echo $layout['feed'] ?>">Atom</a> · <?php Theme::blog_footer() ?></br>
+				<a href="<?php echo $layout['feed'] ?>">Atom</a> · <?php Theme::blog_footer() ?><br />
                 <a target="_blank" href="https://github.com/RMed/ao_theme">Ao theme</a>
 			</div>
 		</footer>
