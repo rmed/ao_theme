@@ -14,7 +14,7 @@
 
     // Include Javascript from theme
     // Fitvids, syntax highlighting, browser update notice
-    Theme::javascript('jquery.fitvids.min.js', 'rainbow-custom.min.js', 'browser-update.js');
+    Theme::javascript(array('jquery.fitvids.min.js','rainbow-custom.min.js', 'browser-update.js'));
 
     // Include Favicon, default path: theme/css/img/favicon.ico
     Theme::favicon();
