@@ -112,39 +112,63 @@ article.post	footer.post		a.tag {
 }
 
 /* --- Social Buttons --- */
-ul.share {
-    float: right;
-    overflow: auto;
+.share_buttons {
+    margin-top: 15px;
 }
 
-ul.share    li {
-    display: inline;
-    font-size: 29px;
-    opacity: 0.8;
+.share_facebook {
+    background-image: url("img/button_facebook.png");
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.75;
+    height: 30px;
+    width: 100px;
 }
 
-ul.share    li:hover {
+.share_facebook:hover {
     opacity: 1;
 }
 
-ul.share    a {
-    padding-right: 32px;
+.share_plus {
+    background-image: url("img/button_plus.png");
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.75;
+    height: 30px;
+    width: 100px;
 }
 
-ul.share    a.facebook {
-    background: url("img/facebook.png") no-repeat;
+.share_plus:hover {
+    opacity: 1;
 }
 
-ul.share    a.plus {
-    background: url("img/plus.png") no-repeat;
+.share_twitter {
+    background-image: url("img/button_twitter.png");
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    opacity: 0.75;
+    height: 30px;
+    width: 100px;
 }
 
-ul.share    a.twitter {
-    background: url("img/twitter.png") no-repeat;
+.share_twitter:hover {
+    opacity: 1;
 }
 
-ul.share    a.email {
-    background: url("img/email.png") no-repeat;
+.share_email {
+    background-image: url("img/button_email.png");
+    border-radius: 5px;
+    display: inline-block;
+    opacity: 0.75;
+    height: 30px;
+    width: 100px;
+}
+
+.share_email:hover {
+    opacity: 1;
 }
 
 /* --- Comment List --- */

@@ -1,5 +1,21 @@
 <?php
 
+// Share buttons
+if( $theme['share_buttons'] )
+{
+    echo '<div class="share_buttons">';
+
+        echo '<a class="share_facebook" title="Share on Facebook" href="https://www.facebook.com/sharer/sharer.php?'.(urlencode($settings['url'].$post['permalink'])).'" target="_blank">';
+
+        echo '<a class="share_plus" title="Share on Google+" href="https://plus.google.com/share?url='.(urlencode($settings['url'].$post['permalink'])).'" target="_blank">';
+
+        echo '<a class="share_twitter" title="Share on Twitter" href="https://twitter.com/share?url='.(urlencode($settings['url'].$post['permalink'])).'" target="_blank">';
+
+        echo '<a class="share_email" title="Share by email" href="mailto:?subject='.$settings['name'].'&amp;body='.(urlencode($settings['url'].$post['permalink'])).'"></a>';
+
+    echo '</div>';
+}
+
 if($post['allow_comments'])
 {
     if( !empty($theme['disqus_account']) && empty($theme['facebook_appId']) )

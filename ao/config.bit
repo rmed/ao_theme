@@ -5,14 +5,16 @@ $theme = array
     'name'=>'Ao',
     'description'=>'Clear thame based on Simpler by Diego Najar',
     'author'=>'Rafael Medina (RMed)',
-    'version'=>'0.2',
+    'version'=>'0.3',
     'last_update'=>'04/11/2013', // dd/mm/yyyy
     'url'=>'http://www.rmedgar.com', // http://xxxxxxxxxxxxx
     'video_width'=>'640',
     'video_height'=>'360',
+    // --- Custom settings ---
     'disqus_account'=>'',
     'facebook_appId'=>'',
     'content_license'=>'',
+    'share_buttons'=>True, // True: display buttons; False: hide buttons
     'nav_links'=> array (
         // Navigation links are configured here, the structure is as follows:
 
