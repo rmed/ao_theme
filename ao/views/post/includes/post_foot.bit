@@ -1,5 +1,8 @@
 <?php
 
+// Separator
+echo '<div id="separator"></div>';
+
 // Share buttons
 if( $theme['share_buttons'] )
 {

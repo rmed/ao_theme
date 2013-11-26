@@ -160,12 +160,17 @@ article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
     text-decoration: none;
 }
 
+article.post #separator {
+    border-top: 1px solid #999999;
+    margin-top: 50px;
+}
+
 /* --- Social Buttons --- */
-.share_buttons {
+article.post .share_buttons {
     margin-top: 15px;
 }
 
-.share_facebook {
+article.post .share_facebook {
     background-image: url("img/button_facebook.png");
     border-radius: 5px;
     display: inline-block;
@@ -175,11 +180,11 @@ article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
     width: 100px;
 }
 
-.share_facebook:hover {
+article.post .share_facebook:hover {
     opacity: 1;
 }
 
-.share_plus {
+article.post .share_plus {
     background-image: url("img/button_plus.png");
     border-radius: 5px;
     display: inline-block;
@@ -189,11 +194,11 @@ article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
     width: 100px;
 }
 
-.share_plus:hover {
+article.post .share_plus:hover {
     opacity: 1;
 }
 
-.share_twitter {
+article.post .share_twitter {
     background-image: url("img/button_twitter.png");
     border-radius: 5px;
     display: inline-block;
@@ -203,11 +208,11 @@ article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
     width: 100px;
 }
 
-.share_twitter:hover {
+article.post .share_twitter:hover {
     opacity: 1;
 }
 
-.share_email {
+article.post .share_email {
     background-image: url("img/button_email.png");
     border-radius: 5px;
     display: inline-block;
@@ -216,7 +221,7 @@ article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
     width: 100px;
 }
 
-.share_email:hover {
+article.post .share_email:hover {
     opacity: 1;
 }
 
