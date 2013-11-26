@@ -4,7 +4,7 @@ if( !empty($theme['nav_links']) )
 {
     echo '<nav id="navbar">';
         foreach($theme['nav_links'] as $link)
-            echo '<div class="navbutton">'.$link['link'].$link['text'].'</a></div>';
+            echo $link;
     echo '</nav>';
 }
 

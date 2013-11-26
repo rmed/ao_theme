@@ -50,6 +50,7 @@ a:hover {
 /* --- Navigation Bar --- */
 #navbar {
     font-weight: bold;
+    font-size: 1.5em;
     text-align: center;
     margin: 0;
     overflow: hidden;
@@ -57,24 +58,19 @@ a:hover {
     width: 100%;
 }
 
-.navbutton {
+#navbar a, #navbar a:link, #navbar a:visited {
+    color: rgb(51, 51, 51);
     border-bottom: 2px solid transparent;
-    float: left;    
+    float: left;
     margin-left: 25px;
     opacity: 0.5;
     padding: 8px;
-    font-size: 1.5em;
-}
-
-.navbutton:hover {
-    border-bottom: 2px solid rgb(51, 51, 51);
-    opacity: 1;
-}
-
-.navbutton a:link, .navbutton a:visited {
-    color: rgb(51, 51, 51);
     text-decoration: none;
-    font-weight: bold;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid #333333;
+    opacity: 1;
 }
 
 /* --- Main Content --- */

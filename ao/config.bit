@@ -6,7 +6,7 @@ $theme = array
     'description'=>'Clear thame based on Simpler by Diego Najar',
     'author'=>'Rafael Medina (RMed)',
     'version'=>'0.3',
-    'last_update'=>'04/11/2013', // dd/mm/yyyy
+    'last_update'=>'26/11/2013', // dd/mm/yyyy
     'url'=>'http://www.rmedgar.com', // http://xxxxxxxxxxxxx
     'video_width'=>'640',
     'video_height'=>'360',
@@ -15,14 +15,10 @@ $theme = array
     'facebook_appId'=>'',
     'content_license'=>'',
     'share_buttons'=>True, // True: display buttons; False: hide buttons
-    'nav_links'=> array (
+    'nav_links'=>array (
         // Navigation links are configured here, the structure is as follows:
-
-        // array ('text'=>'TEXT_OF_THE_LINK', 'link'=>'<a href="LINK_HERE">'),
-
-        // Note that the <a> tag is not closed on purpose, this is done so that it is possible to add
-        // other parameters to the link such as 'target="_blank"'    
-        array ('text'=>$Language->get('HOME'), 'link'=>'<a href="'.HTML_PATH_ROOT.'">'),
+        // '<a href="LINK">TEXT OF THE LINK</a>',
+        '<a href="'.HTML_PATH_ROOT.'">'.$Language->get('HOME').'</a>',
     )
 );
 
