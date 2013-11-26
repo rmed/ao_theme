@@ -3,7 +3,7 @@
 echo '<footer class="post">';
 
     // Show tags
-    if(!empty($post['tags']))
+    /*if(!empty($post['tags']))
     {
         echo '<div class="tags">';
             echo '<span>';
@@ -11,7 +11,7 @@ echo '<footer class="post">';
                     echo '<a class="tag" href="'.Url::tag($tag).'">'.$tag.'</a>';
             echo '</span>';
         echo '</div>';
-    }
+    }*/
 
     // Read more or Permalink
     $text = ($post['read_more'])?$Language->get('READ_MORE'):$Language->get('PERMALINK');
@@ -41,6 +41,19 @@ echo '<footer class="post">';
             echo '<span><a href="'.$post['permalink'].'#comment_form">'.$Language->get('COMMENTS').' ('.count($post['comments']).')</a></span>';
         }
     }
+
+    if(!empty($post['tags']))
+        {
+            echo '<ul class="menu">';
+                echo '<li>';
+                    echo '<a href="#">Tags</a>';
+                    echo '<a class="close_list" title="Close" href="#">X</a><ul>';
+                    foreach($post['tags'] as $tag)
+                        echo '<li><a class="tag" href="'.Url::tag($tag).'">'.$tag.'</a></li>';
+                    echo '</ul>';
+                echo '</li>';
+            echo '</ul>';
+        }
 
 echo '</footer>';
 

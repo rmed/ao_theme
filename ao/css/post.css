@@ -99,16 +99,65 @@ article.post	footer.post		a {
 	font-weight: normal;
 }
 
-article.post	footer.post		div.tags {
-	margin-bottom: 3px;
+article.post footer.post .menu {
+    float: right;
+    margin: 0px 3px;
+    list-style: none outside none;
 }
 
-article.post	footer.post		a.tag {
-	background: #F1F1F1;
-	padding: 0 6px;
-	margin-right: 5px;
-	border-radius: 2px;
-	color: #333;
+article.post footer.post .menu a.close_list {
+    color: #7A868E;
+    display: none;
+    background-color: #FFFFFF;
+    border-color: #B2B2B2 #FFFFFF #B2B2B2 #B2B2B2;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-left: 5px;
+    padding-left: 7px;
+    padding-right: 8px;
+    position: absolute;
+    text-decoration: none;
+    z-index: 1;
+}
+
+article.post footer.post .menu a.close_list:hover {
+    color: #000000;
+}
+
+article.post footer.post .menu ul {
+    display: none; /* Hide before plugin loads */
+}
+
+article.post footer.post .menu ul.dropit-submenu {
+    background-color: #FFFFFF;
+    border: 1px solid #B2B2B2;
+    margin: -30px 0px 0px 55px;
+    padding: 6px 0;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+    -webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+       -moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+            box-shadow: 0px 1px 3px rgba(0,0,0,0.15);
+    list-style: none outside none;
+    position: absolute;
+}
+     
+article.post footer.post .menu ul.dropit-submenu li a.tag {
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    color: #7A868E;
+    padding: 0 18px;
+    text-decoration: none;
+}
+
+article.post footer.post .menu ul.dropit-submenu li a.tag:hover {
+    background: #17B0E9;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* --- Social Buttons --- */
