@@ -31,11 +31,13 @@
                         if($(this).parents(settings.triggerParentEl).hasClass('dropit-open')) return false;
                         settings.beforeHide.call(this);
                         $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
+                        $('.tag_trigger').show();
                         $('.close_list').hide();
                         settings.afterHide.call(this);
                         settings.beforeShow.call(this);
                         $(this).parents(settings.triggerParentEl).addClass('dropit-open').find(settings.submenuEl).show();
                         $(this).parents(settings.triggerParentEl).addClass('dropit-open').find('.close_list').show();
+                        $(this).parents(settings.triggerParentEl).addClass('dropit-open').find('.tag_trigger').hide();
                         settings.afterShow.call(this);
                         return false;
                     });
@@ -46,6 +48,7 @@
                         settings.beforeHide.call(this);
                         $('.dropit-open').removeClass('dropit-open').find('.dropit-submenu').hide();
                         $('.close_list').hide();
+                        $('.tag_trigger').show();
                         settings.afterHide.call(this);
                     });
                     
