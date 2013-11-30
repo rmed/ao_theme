@@ -6,14 +6,14 @@ $theme = array
     'description'=>'Clear thame based on Simpler by Diego Najar',
     'author'=>'Rafael Medina (RMed)',
     'version'=>'0.3',
-    'last_update'=>'26/11/2013', // dd/mm/yyyy
-    'url'=>'http://www.rmedgar.com', // http://xxxxxxxxxxxxx
+    'last_update'=>'30/11/2013', // dd/mm/yyyy
+    'url'=>'http://www.rmedgar.com',
     'video_width'=>'640',
     'video_height'=>'360',
     // --- Custom settings ---
     'disqus_account'=>'',
     'facebook_appId'=>'',
-    'content_license'=>'',
+    'content_license'=>'', // This content appears on the bottom left part of the page
     'share_buttons'=>True, // True: display buttons; False: hide buttons
     'nav_links'=>array (
         // Navigation links are configured here, the structure is as follows:
